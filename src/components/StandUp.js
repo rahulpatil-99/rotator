@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Standup = ({name}) => (
+const Standup = (props) => (
     <div>
-        {name}
+        {props.name}
     </div>
 )
 

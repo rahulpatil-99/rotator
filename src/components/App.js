@@ -1,10 +1,10 @@
 import React from 'react';
-import Standup from './StandUp';
+import Standup from './../container/StandUp';
 
 export class App extends React.Component{
     render(){
         return <div>
-            <Standup name={'hello'}/>
+            <Standup />
         </div>;
     }
 }

@@ -4,6 +4,6 @@ const nameList = {
         'bar',
         'goo'
     ]
-}
+};
 
 export default nameList;
