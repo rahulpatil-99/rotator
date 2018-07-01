@@ -8,4 +8,10 @@ describe('StandUp Component', () =>{
         const component = shallow(Standup({name}));
         expect(component.contains(name)).toBeTruthy();
     });
+
+    it('should contain the spin button', () => {
+        const name = "Name";
+        const component = shallow(Standup({name}));
+        expect(component.contains(<button color={"green"} type={"button"} value={"SPIN"}/>)).toBeTruthy();
+    });
 });

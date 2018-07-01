@@ -6,4 +6,10 @@ const mapStateToProps = state => ({
     name : choose(state.name)
 })
 
-export default connect(mapStateToProps)(Standup);
+const mapDispatchToProps = dispatch => ({
+    spin: () => {
+        dispatch({type: 'SPIN'})
+    }
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Standup);
