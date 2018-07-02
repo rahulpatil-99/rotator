@@ -13,4 +13,9 @@ describe('StandUp Component', () =>{
         const component = shallow(<Standup name="Some Name" />);
         expect(component.find("button").exists()).toBeTruthy();
     });
+
+    it('should reload page when the name is empty', () => {
+        const component = shallow(<Standup name={undefined} />);
+        expect(component).toEqual('a');
+    });
 });
