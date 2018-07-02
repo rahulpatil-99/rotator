@@ -5,7 +5,7 @@ const Standup = (props) => {
     <div>
         {props.name}
         <br />
-        <button onClick={props.spin}>
+        <button onClick={() => (props.spin(props.name))}>
             SPIN
             </button>
     </div>
