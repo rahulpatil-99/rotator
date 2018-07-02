@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Standup = (props) => (
+const Standup = (props) => {
+    return (
     <div>
         {props.name}
         <br />
@@ -8,6 +9,7 @@ const Standup = (props) => (
             SPIN
             </button>
     </div>
-)
+    )
+}
 
 export default Standup;

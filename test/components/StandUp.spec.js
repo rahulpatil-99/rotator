@@ -4,14 +4,13 @@ import Standup from './../../src/components/StandUp';
 
 describe('StandUp Component', () =>{
     it('should display a name', () => {
-        const name = "Name";
-        const component = shallow(Standup({name}));
-        expect(component.contains(name)).toBeTruthy();
+        const someName = "Name";
+        const component = shallow(<Standup name={someName} />);
+        expect(component.props().children[0]).toEqual(someName);
     });
 
     it('should contain the spin button', () => {
-        const name = "Name";
-        const component = shallow(Standup({name}));
-        expect(component.contains(<button color={"green"} type={"button"} value={"SPIN"}/>)).toBeTruthy();
+        const component = shallow(<Standup name="Some Name" />);
+        expect(component.find("button").exists()).toBeTruthy();
     });
 });
