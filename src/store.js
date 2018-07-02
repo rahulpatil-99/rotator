@@ -1,12 +1,8 @@
 import { createStore } from 'redux';
 import nameList from './NameList';
+import createReducer from './reducers/createReducer';
 
-const reducer = (state, action) => {
-    return {name: state.name};
-}
-
-
-const store = createStore(reducer,
+const store = createStore(createReducer(),
     nameList,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
