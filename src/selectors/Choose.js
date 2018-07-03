@@ -1,6 +1,11 @@
+const random = range => (
+    Math.floor(Math.random() * range)
+)
+
 const choose = (list) => {
-    const random_index = Math.floor(Math.random() * list.length);
-    return list[random_index];
+    const length = list.length;
+    const index = random(length);
+    return list[index];
 }
 
-export default choose; 
+export default choose;
