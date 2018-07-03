@@ -5,7 +5,8 @@ const random = range => (
 const choose = (list) => {
     const length = list.length;
     const index = random(length);
-    return list[index];
+    const anotherIndex = (1 + index)%length;
+    return [list[index], list[anotherIndex]];
 }
 
 export default choose;

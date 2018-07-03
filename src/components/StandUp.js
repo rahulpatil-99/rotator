@@ -2,13 +2,13 @@ import React from 'react';
 
 const display = (name) =>(
     name?
-    name:
+        name:
     location.reload()
 )
 
 const Standup = (props) => {
     return (
-    <div>
+    <div class="StandUp">
         {display(props.name)}
         <br />
         <button onClick={() => (props.spin(props.name))}>
