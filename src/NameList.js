@@ -1,8 +1,13 @@
 const nameList = {
     name:[
-        'foo',
-        'bar',
-        'goo'
+        'Prasenjit',
+        'Partha',
+        'Puja',
+        'Abhishek',
+        'Kavya',
+        'Chan',
+        "DJ",
+        "Nawazish"
     ]
 };
 
