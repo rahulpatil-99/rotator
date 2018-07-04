@@ -12,4 +12,9 @@ describe('Stand up selector', () => {
         const chosen = choose(array);
         expect(chosen).toHaveLength(2);
     });
+
+    it('should return undefined for a single element list', () => {
+        const singleElementList = ['an element'];
+        expect(choose(singleElementList)).toEqual(undefined);
+    });
 });
