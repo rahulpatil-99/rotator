@@ -1,5 +1,5 @@
 const remove = (state, action) => ({
-    name: state.name.filter(name => name !== action.name)
+    name: state.name.filter(name => !action.name.includes(name))
 })
 
 const actionHandler = {

@@ -1,14 +1,15 @@
 import React from 'react';
+import './../css/StandUp.css';
 
 const display = (name) =>(
-    name?
-        name:
+    name[0] && name [1]?
+        name[0] + "     " + name[1]:
     location.reload()
 )
 
 const Standup = (props) => {
     return (
-    <div class="StandUp">
+    <div className="StandUp">
         {display(props.name)}
         <br />
         <button onClick={() => (props.spin(props.name))}>
