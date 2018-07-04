@@ -5,7 +5,7 @@ const remove = (state, action) => ({
 })
 
 const reload = (state, action) =>({
-    ...nameList
+    name: nameList
 });
 
 const actionHandler = {
