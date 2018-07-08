@@ -10,6 +10,10 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
     spin: (name) => {
         dispatch(actions.remove(name));
+    },
+
+    reload: () => {
+        dispatch(actions.reload)
     }
 });
 
