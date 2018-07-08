@@ -6,9 +6,9 @@ const choose = (list) => {
     const length = list.length;
     if(length <= 1)
         return undefined;
-    const index = random(length);
-    const anotherIndex = (1 + index)%length;
-    return [list[index], list[anotherIndex]];
+    const oneFacilitator = list[0];
+    const anotherFacilitator = list[1];
+    return [oneFacilitator, anotherFacilitator];
 }
 
 export default choose;
