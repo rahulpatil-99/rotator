@@ -12,4 +12,10 @@ describe('Stand up actions', () => {
         const expectedAction = {type: 'RELOAD'};
         expect(actions.reload()).toEqual(expectedAction);
     });
+
+    it('should create an action that would skip the selected name', () =>{
+        const name = 'Name';
+        const expectedAction = {type: 'SKIP', name};
+        expect(actions.skip(name)).toEqual(expectedAction);
+    });
 });
