@@ -1,13 +1,15 @@
+import actionType from '../../src/constants/ActionTypes'
+
 export const remove = name => ({
-    type: 'REMOVE',
+    type: actionType.REMOVE,
     name
 });
 
 export const reload = () => ({
-    type: 'RELOAD'
+    type: actionType.RELOAD
 });
 
 export const skip = name => ({
-    type: 'SKIP',
+    type: actionType.SKIP,
     name
 });
